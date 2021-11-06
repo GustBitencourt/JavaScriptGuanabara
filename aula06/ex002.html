@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Exercício 2 e 3- Curso em Vídeo - Guanabara</title>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Sem maldição no aprendizado</p>
+    
+
+    <script>
+        //parseFloat e parseInt converte string para número
+        //String(n) converte número para string -
+        //nomeString.length quantos caracter a string tem
+        //nomeString.toUpperCase() transforma as letras em maiúsculas
+        //nomeString.toLowerCase() transforma letras minúsculas
+        let nome = window.prompt('Qual o seu nome?'); /* guardando nome na variável */
+        document.write(`Olá ${nome}. Seu nome possui ${nome.length} letras, aqui está ele em letras MAIÚSCULAS ${nome.toUpperCase()}`);
+        //toFixed() podemos definir a quantidade de casas decimais vai possuir um número
+        let numero = 1565.89;
+        numero.toFixed(2).replace('.', ',');
+        numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //transforma o número para sua configuração em reais
+        numero.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) // Dólar
+        numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) // Euro
+    </script>
+</body>
+</html>

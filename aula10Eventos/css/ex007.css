@@ -1,0 +1,12 @@
+body {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+input {
+    width: 100px;
+}
+
+#res {
+    margin-top: 20px;
+}

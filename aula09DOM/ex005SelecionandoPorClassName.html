@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 09 - DOM</title>
+</head>
+<body>
+    <h1>Iniciando os Estudos</h1>
+    <p>Aqui vão os resultados</p>
+    <p>Aprendendo o <strong>DOM</strong> no JavaScript</p>
+    <h2>Selecionando por <strong>Tag Name</strong></h2>
+    <div class="msg">Clique em mim</div>
+
+
+
+    <script>
+        /* Selecionando o corpo e o primeiro parágrafo */
+        let corpo = window.document.body;
+        let p1 = window.document.getElementsByTagName('p')[0];
+        window.document.write("o conteúdo do primeiro paragrafo é " + p1.innerText);
+        corpo.style.background = 'red';
+        p1.style.color = 'black';
+
+        /* Selecionando por ClassName */
+        let byId = window.document.getElementsByClassName('msg')[0];
+        byId.style.backgroundColor = 'blue';
+        byId.innerText = "Selecionei por ClassName";
+
+
+    </script>    
+</body>
+</html>
